@@ -59,10 +59,10 @@ typedef struct
 } WAVE_FORMAT;
 // WAVEフォーマット
 
-void monoWaveRead(MONO_PCM *pcm, char *fileName);
+void monoWaveRead(MONO_PCM *pcm, const char *fileName);
 // モノラルの音声データ(waveファイル)の読み込み
 
-void monoWaveWrite(MONO_PCM *pcm, char *fileName);
+void monoWaveWrite(MONO_PCM *pcm, const char *fileName);
 // モノラルの音声データ(waveファイル)書き込み
 
 #endif

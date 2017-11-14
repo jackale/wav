@@ -1,6 +1,6 @@
 #include "wave.h"
 
-void monoWaveRead(MONO_PCM *pcm, char *fileName)
+void monoWaveRead(MONO_PCM *pcm, const char *fileName)
 {
 	FILE *fp;
 	int i;
@@ -48,7 +48,7 @@ void monoWaveRead(MONO_PCM *pcm, char *fileName)
 	fclose(fp);
 }
 
-void monoWaveWrite(MONO_PCM *pcm, char *fileName)
+void monoWaveWrite(MONO_PCM *pcm, const char *fileName)
 {
 	FILE *fp;
 	int i;
